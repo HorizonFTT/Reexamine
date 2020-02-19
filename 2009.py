@@ -17,4 +17,4 @@ def handle_article(path_from, path_to):
 
 
 if __name__ == "__main__":
-    handle_article('org.dat', 'new_2009.txt')
+    handle_article('org_2009.dat', 'new_2009.txt')
