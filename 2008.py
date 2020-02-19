@@ -8,7 +8,7 @@ def handle_word(word: str):
     for c in word:
         if c.isalnum():
             s += c
-    return s.capitalize()
+    return s[:1].upper() + s[1:]
 
 
 def handle_article(path_from, path_to):
@@ -22,4 +22,4 @@ def handle_article(path_from, path_to):
 
 
 if __name__ == "__main__":
-    handle_article('test.txt', 'new.txt')
+    handle_article('test.txt', 'new_2008.txt')
