@@ -41,13 +41,13 @@ if __name__ == "__main__":
     path = 'data.txt'
     nums = get_nums(path)
 
-    print('max of nums: ', max(nums))
-    print('min of nums: ', min(nums))
-    print('max of primes: ', get_max_prime(nums))
+    print('max of nums:', max(nums))
+    print('min of nums:', min(nums))
+    print('max of primes:', get_max_prime(nums))
 
     nums.sort(reverse=True)
-    for i in range(len(nums)//3):
-        beg = 3 * i
-        end = beg + 3
-        l = nums[beg:end]
-        print(f'{i}: {max(l)} {min(l)}')
+    length = len(nums)//3
+    l = nums[length:2*length]
+    print('max of mid_seg:', max(l))
+    print('min of mid_seg:', min(l))
+
